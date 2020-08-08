@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: PopLight;
+    src: url('./Fonts/Poppins-Light.ttf')
+}
+
+@font-face{
+    font-family: PopRegular;
+    src: url('./Fonts/Poppins-Regular.ttf')
+}
+
+body{
+    font-family: PopLight;
+}
+
+.portofolio{
+    color: white;
+    background: radial-gradient(rgb(94, 38, 38), rgb(26, 13, 12));
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logoText{
+    font-size: 40px;
+}
+
+.logoImg{
+    width: 150px;
+    filter: invert(100%)
+}
+
+.page{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    padding-bottom: 70px;
+}
+
+.hero{
+    overflow: hidden;
+    height: 600px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+
+.details{
+    grid-column: 2/3;
+    align-self: end;
+}
+
+.details h1{
+    font-size: 54px;
+    text-shadow: 12px 12px 12px rgba(0,0,0,0.5);
+    font-family: PopRegular;
+}
+
+.details h2{
+    font-size: 30px;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    padding: 20px 0px;
+}
+
+.teslaroadster{
+    height: 600px
+}
